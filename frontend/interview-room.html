@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Room | InterviewAI</title>
+
+    <link rel="stylesheet" href="css/interview-room.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="interview-header">
+
+        <a href="index.html" class="logo">
+            <span>✦</span> Interview<span>AI</span>
+        </a>
+
+        <div class="interview-info">
+
+            <div class="role-display">
+                <span id="roleDisplay">Python Developer</span>
+            </div>
+
+            <div class="timer">
+                ⏱ <span id="timer">00:00</span>
+            </div>
+
+        </div>
+
+        <button class="exit-btn" onclick="confirmExit()">
+            Exit Interview
+        </button>
+
+    </header>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-container">
+
+        <div class="progress-info">
+
+            <span>
+                Question <strong id="currentQuestion">1</strong>
+                of
+                <strong id="totalQuestions">10</strong>
+            </span>
+
+            <span id="difficultyDisplay">
+                Medium
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+    </div>
+
+
+    <!-- MAIN -->
+
+    <main class="interview-container">
+
+
+        <!-- AI SIDE -->
+
+        <section class="ai-panel">
+
+            <div class="ai-avatar">
+
+                <div class="avatar-ring">
+                    ✦
+                </div>
+
+            </div>
+
+            <div class="ai-status">
+                <span></span>
+                AI Interviewer
+            </div>
+
+            <p class="ai-description">
+                Take your time and answer naturally.
+                Your response will be evaluated after submission.
+            </p>
+
+        </section>
+
+
+        <!-- QUESTION -->
+
+        <section class="question-panel">
+
+            <div class="question-label">
+                AI QUESTION
+            </div>
+
+            <h1 id="questionText">
+                Loading your first question...
+            </h1>
+
+            <div class="question-meta">
+
+                <span>
+                    💡 Take your time
+                </span>
+
+                <span>
+                    🎯 Be specific
+                </span>
+
+            </div>
+
+
+            <!-- ANSWER -->
+
+            <div class="answer-section">
+
+                <div class="answer-header">
+
+                    <label for="answer">
+                        Your answer
+                    </label>
+
+                    <span id="wordCount">
+                        0 words
+                    </span>
+
+                </div>
+
+
+                <textarea
+                    id="answer"
+                    placeholder="Type your answer here..."
+                    spellcheck="true"
+                ></textarea>
+
+
+                <div class="answer-actions">
+
+                    <button
+                        class="voice-btn"
+                        id="voiceBtn"
+                        onclick="toggleVoice()"
+                    >
+                        🎤
+                        <span>Use microphone</span>
+                    </button>
+
+
+                    <button
+                        class="submit-btn"
+                        id="submitBtn"
+                        onclick="submitAnswer()"
+                    >
+                        Submit Answer
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- THINKING -->
+
+            <div
+                class="thinking"
+                id="thinking"
+            >
+
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>
+                    AI is evaluating your answer...
+                </span>
+
+            </div>
+
+
+            <!-- FEEDBACK -->
+
+            <div
+                class="feedback"
+                id="feedback"
+            >
+
+                <div class="feedback-header">
+
+                    <span>AI FEEDBACK</span>
+
+                    <strong id="score">
+                        8/10
+                    </strong>
+
+                </div>
+
+                <p id="feedbackText">
+                    Your answer demonstrates a good understanding
+                    of the concept.
+                </p>
+
+                <button
+                    class="next-btn"
+                    onclick="nextQuestion()"
+                >
+                    Next Question →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- EXIT MODAL -->
+
+    <div
+        class="modal"
+        id="exitModal"
+    >
+
+        <div class="modal-content">
+
+            <h2>Leave interview?</h2>
+
+            <p>
+                Your current progress will be lost.
+            </p>
+
+            <div class="modal-actions">
+
+                <button
+                    class="cancel-btn"
+                    onclick="closeExitModal()"
+                >
+                    Continue
+                </button>
+
+                <button
+                    class="leave-btn"
+                    onclick="leaveInterview()"
+                >
+                    Leave Interview
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/interview-room.js"></script>
+
+</body>
+
+</html>

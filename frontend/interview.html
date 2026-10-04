@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Setup | InterviewAI</title>
+
+    <link rel="stylesheet" href="css/interview.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>✦</span> Interview<span>AI</span>
+        </a>
+
+        <div class="secure">
+            🔒 Private Interview
+        </div>
+
+    </nav>
+
+
+    <main class="setup-container">
+
+        <div class="setup-header">
+
+            <div class="step-indicator">
+                <span class="active">1</span>
+                <div></div>
+                <span>2</span>
+                <div></div>
+                <span>3</span>
+            </div>
+
+            <span class="setup-label">INTERVIEW SETUP</span>
+
+            <h1>
+                Configure your
+                <span>interview.</span>
+            </h1>
+
+            <p>
+                Tell us a little about the interview you want to practice.
+                Our AI will customize the experience for you.
+            </p>
+
+        </div>
+
+
+        <form id="interviewForm" class="setup-card">
+
+
+            <!-- JOB ROLE -->
+
+            <div class="form-group">
+
+                <label for="role">
+                    What role are you preparing for?
+                </label>
+
+                <div class="select-wrapper">
+
+                    <select id="role" required>
+
+                        <option value="" disabled selected>
+                            Select a job role
+                        </option>
+
+                        <option value="python-developer">
+                            Python Developer
+                        </option>
+
+                        <option value="java-developer">
+                            Java Developer
+                        </option>
+
+                        <option value="data-analyst">
+                            Data Analyst
+                        </option>
+
+                        <option value="ai-ml-engineer">
+                            AI / ML Engineer
+                        </option>
+
+                        <option value="data-scientist">
+                            Data Scientist
+                        </option>
+
+                        <option value="web-developer">
+                            Web Developer
+                        </option>
+
+                        <option value="software-developer">
+                            Software Developer
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="form-group">
+
+                <label>
+                    Experience level
+                </label>
+
+                <div class="option-grid">
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="fresher"
+                            checked
+                        >
+
+                        <div class="option-content">
+
+                            <div class="option-icon">
+                                🌱
+                            </div>
+
+                            <div>
+                                <strong>Fresher</strong>
+                                <small>0–1 years</small>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="junior"
+                        >
+
+                        <div class="option-content">
+
+                            <div class="option-icon">
+                                🚀
+                            </div>
+
+                            <div>
+                                <strong>Junior</strong>
+                                <small>1–3 years</small>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="option-card">
+
+                        <input
+                            type="radio"
+                            name="experience"
+                            value="mid"
+                        >
+
+                        <div class="option-content">
+
+                            <div class="option-icon">
+                                💼
+                            </div>
+
+                            <div>
+                                <strong>Mid-level</strong>
+                                <small>3–5 years</small>
+                            </div>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- INTERVIEW TYPE -->
+
+            <div class="form-group">
+
+                <label>
+                    Interview type
+                </label>
+
+                <div class="type-grid">
+
+                    <label class="type-card">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            value="technical"
+                            checked
+                        >
+
+                        <div>
+
+                            <div class="type-icon">
+                                💻
+                            </div>
+
+                            <strong>Technical</strong>
+
+                            <p>
+                                Test your technical knowledge
+                                and problem-solving skills.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="type-card">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            value="hr"
+                        >
+
+                        <div>
+
+                            <div class="type-icon">
+                                👤
+                            </div>
+
+                            <strong>HR / Behavioral</strong>
+
+                            <p>
+                                Practice common HR and
+                                behavioral questions.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="type-card">
+
+                        <input
+                            type="radio"
+                            name="type"
+                            value="mixed"
+                        >
+
+                        <div>
+
+                            <div class="type-icon">
+                                🧠
+                            </div>
+
+                            <strong>Mixed</strong>
+
+                            <p>
+                                A realistic combination of
+                                technical and HR questions.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIFFICULTY -->
+
+            <div class="form-group">
+
+                <label>
+                    Difficulty
+                </label>
+
+                <div class="difficulty-grid">
+
+                    <label class="difficulty-card">
+
+                        <input
+                            type="radio"
+                            name="difficulty"
+                            value="easy"
+                        >
+
+                        <span>Easy</span>
+
+                    </label>
+
+
+                    <label class="difficulty-card selected">
+
+                        <input
+                            type="radio"
+                            name="difficulty"
+                            value="medium"
+                            checked
+                        >
+
+                        <span>Medium</span>
+
+                    </label>
+
+
+                    <label class="difficulty-card">
+
+                        <input
+                            type="radio"
+                            name="difficulty"
+                            value="hard"
+                        >
+
+                        <span>Hard</span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- NUMBER OF QUESTIONS -->
+
+            <div class="form-group">
+
+                <label for="questions">
+                    Number of questions
+                </label>
+
+                <select id="questions">
+
+                    <option value="5">
+                        5 Questions — Quick Practice
+                    </option>
+
+                    <option value="10" selected>
+                        10 Questions — Standard Interview
+                    </option>
+
+                    <option value="15">
+                        15 Questions — Deep Practice
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- START -->
+
+            <button
+                type="submit"
+                class="start-btn"
+            >
+                Start AI Interview
+                <span>→</span>
+            </button>
+
+
+            <p class="privacy">
+                🔒 Your interview data is processed securely.
+            </p>
+
+        </form>
+
+    </main>
+
+
+    <script src="js/interview.js"></script>
+
+</body>
+
+</html>

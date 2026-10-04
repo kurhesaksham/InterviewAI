@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InterviewAI | AI Interview Simulator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            Interview<span>AI</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <button class="nav-btn" onclick="startInterview()">
+                Start Interview
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                <span class="pulse"></span>
+                AI-Powered Interview Practice
+            </div>
+
+            <h1>
+                Practice interviews.
+                <br>
+                <span>Get hired.</span>
+            </h1>
+
+            <p class="hero-description">
+                Experience realistic AI-powered interviews, receive
+                instant feedback, and improve your interview skills
+                before the real interview.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="startInterview()">
+                    Start Your Interview
+                    <span>→</span>
+                </button>
+
+                <a href="#how-it-works" class="secondary-btn">
+                    See how it works
+                </a>
+            </div>
+
+            <div class="trust">
+                <div class="avatars">
+                    <div>👨🏻</div>
+                    <div>👩🏻</div>
+                    <div>👨🏽</div>
+                    <div>👩🏽</div>
+                </div>
+
+                <p>
+                    Practice smarter with AI
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- AI Interview Card -->
+        <div class="hero-card">
+
+            <div class="card-header">
+                <div>
+                    <span class="status-dot"></span>
+                    AI Interviewer
+                </div>
+
+                <span class="live">LIVE</span>
+            </div>
+
+            <div class="question-card">
+
+                <span class="question-label">
+                    QUESTION 03
+                </span>
+
+                <h3>
+                    Tell me about a challenging
+                    project you worked on.
+                </h3>
+
+                <div class="answer-box">
+                    <div class="mic">🎙️</div>
+
+                    <div>
+                        <p>Ready when you are...</p>
+                        <small>Click the microphone to answer</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+
+                <div>
+                    <span>Progress</span>
+
+                    <div class="progress">
+                        <div></div>
+                    </div>
+                </div>
+
+                <strong>3 / 10</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features" class="section">
+
+        <div class="section-heading">
+
+            <span>POWERED BY AI</span>
+
+            <h2>
+                Everything you need to
+                <br>
+                <strong>ace your interview.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+
+                <h3>AI Interviewer</h3>
+
+                <p>
+                    Practice with an AI interviewer that
+                    dynamically generates realistic questions.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+
+                <h3>Smart Evaluation</h3>
+
+                <p>
+                    Get detailed feedback on accuracy,
+                    relevance, clarity, and completeness.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+
+                <h3>Performance Analytics</h3>
+
+                <p>
+                    Track your performance and discover
+                    the areas you need to improve.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">🎤</div>
+
+                <h3>Voice Interviews</h3>
+
+                <p>
+                    Practice answering naturally using
+                    your microphone like a real interview.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-section">
+
+        <div class="section-heading">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>
+                From practice to
+                <strong>confidence.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+
+                <h3>Choose your role</h3>
+
+                <p>
+                    Select the job role, experience level,
+                    interview type and difficulty.
+                </p>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">02</div>
+
+                <h3>Take the interview</h3>
+
+                <p>
+                    Answer AI-generated questions just
+                    like you would in a real interview.
+                </p>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">03</div>
+
+                <h3>Get AI feedback</h3>
+
+                <p>
+                    Receive a detailed performance report
+                    with personalized recommendations.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>
+            Ready to test your
+            <span>interview skills?</span>
+        </h2>
+
+        <p>
+            Start your first AI-powered mock interview.
+        </p>
+
+        <button class="primary-btn" onclick="startInterview()">
+            Start Interview →
+        </button>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 InterviewAI. Built with AI & Python.</p>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

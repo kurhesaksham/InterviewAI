@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Results | InterviewAI</title>
+
+    <link rel="stylesheet" href="css/results.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>✦</span> Interview<span>AI</span>
+        </a>
+
+        <button onclick="startAgain()" class="restart-btn">
+            New Interview
+        </button>
+
+    </header>
+
+
+    <main class="results-container">
+
+        <!-- HEADER -->
+
+        <section class="results-header">
+
+            <div class="completion-icon">
+                ✓
+            </div>
+
+            <span>INTERVIEW COMPLETE</span>
+
+            <h1>
+                Here's how you performed.
+            </h1>
+
+            <p>
+                Your AI-powered interview evaluation is ready.
+            </p>
+
+        </section>
+
+
+        <!-- OVERALL SCORE -->
+
+        <section class="score-card">
+
+            <div class="score-circle">
+
+                <div>
+
+                    <strong id="overallScore">
+                        --
+                    </strong>
+
+                    <small>/10</small>
+
+                </div>
+
+            </div>
+
+
+            <div class="score-info">
+
+                <span class="score-label">
+                    OVERALL PERFORMANCE
+                </span>
+
+                <h2 id="performanceTitle">
+                    Calculating...
+                </h2>
+
+                <p id="performanceText">
+                    Analyzing your interview performance...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- METRICS -->
+
+        <section class="metrics-grid">
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Accuracy</span>
+                    <strong id="accuracy">--</strong>
+                </div>
+
+                <div class="metric-bar">
+                    <div id="accuracyBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Relevance</span>
+                    <strong id="relevance">--</strong>
+                </div>
+
+                <div class="metric-bar">
+                    <div id="relevanceBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Clarity</span>
+                    <strong id="clarity">--</strong>
+                </div>
+
+                <div class="metric-bar">
+                    <div id="clarityBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Completeness</span>
+                    <strong id="completeness">--</strong>
+                </div>
+
+                <div class="metric-bar">
+                    <div id="completenessBar"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INSIGHTS -->
+
+        <section class="insights-grid">
+
+            <div class="insight-card">
+
+                <div class="insight-heading">
+                    <span>💪</span>
+                    <h2>Strengths</h2>
+                </div>
+
+                <ul id="strengthsList">
+                    <li>Analyzing...</li>
+                </ul>
+
+            </div>
+
+
+            <div class="insight-card">
+
+                <div class="insight-heading">
+                    <span>🎯</span>
+                    <h2>Areas to Improve</h2>
+                </div>
+
+                <ul id="improvementsList">
+                    <li>Analyzing...</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUESTION BREAKDOWN -->
+
+        <section class="breakdown">
+
+            <div class="section-title">
+
+                <span>INTERVIEW BREAKDOWN</span>
+
+                <h2>
+                    Question-by-question performance
+                </h2>
+
+            </div>
+
+
+            <div id="questionResults">
+
+                <!-- JavaScript will insert results here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTIONS -->
+
+        <section class="bottom-actions">
+
+            <button
+                class="secondary-btn"
+                onclick="startAgain()"
+            >
+                ↻ Practice Again
+            </button>
+
+            <button
+                class="primary-btn"
+                onclick="window.print()"
+            >
+                Download Report
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            InterviewAI · AI-powered interview practice
+        </p>
+
+    </footer>
+
+
+    <script src="js/results.js"></script>
+
+</body>
+
+</html>

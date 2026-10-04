@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Inter, Arial, sans-serif;
+
+    background: #07070a;
+
+    color: white;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #1c1c22;
+}
+
+.logo {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+.logo span {
+    color: #8b5cf6;
+}
+
+.secure {
+    color: #71717a;
+
+    font-size: 13px;
+}
+
+
+/* MAIN */
+
+.setup-container {
+    width: min(850px, 92%);
+
+    margin: 60px auto 100px;
+}
+
+
+/* HEADER */
+
+.setup-header {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.setup-label {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #8b5cf6;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.setup-header h1 {
+    margin-top: 10px;
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+}
+
+.setup-header h1 span {
+    color: #8b5cf6;
+}
+
+.setup-header p {
+    max-width: 600px;
+
+    margin: 15px auto;
+
+    color: #71717a;
+}
+
+
+/* STEPS */
+
+.step-indicator {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.step-indicator span {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #18181b;
+
+    color: #52525b;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.step-indicator span.active {
+    background: #8b5cf6;
+
+    color: white;
+}
+
+.step-indicator div {
+    width: 50px;
+
+    height: 1px;
+
+    background: #27272a;
+}
+
+
+/* CARD */
+
+.setup-card {
+    padding: 40px;
+
+    border: 1px solid #202027;
+
+    border-radius: 18px;
+
+    background: #101014;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.3);
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.form-group > label {
+    display: block;
+
+    margin-bottom: 13px;
+
+    color: #e4e4e7;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+select {
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #27272a;
+
+    background: #18181b;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #8b5cf6;
+}
+
+
+/* OPTIONS */
+
+.option-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.option-card,
+.type-card,
+.difficulty-card {
+    cursor: pointer;
+}
+
+.option-card input,
+.type-card input,
+.difficulty-card input {
+    display: none;
+}
+
+.option-card {
+    padding: 18px;
+
+    border: 1px solid #27272a;
+
+    border-radius: 12px;
+
+    background: #151519;
+
+    transition: 0.2s;
+}
+
+.option-card:has(input:checked) {
+    border-color: #8b5cf6;
+
+    background: rgba(139,92,246,0.08);
+}
+
+.option-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.option-icon {
+    font-size: 25px;
+}
+
+.option-content strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+.option-content small {
+    color: #71717a;
+
+    font-size: 12px;
+}
+
+
+/* INTERVIEW TYPE */
+
+.type-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.type-card {
+    padding: 22px;
+
+    border: 1px solid #27272a;
+
+    border-radius: 12px;
+
+    background: #151519;
+
+    transition: 0.2s;
+}
+
+.type-card:has(input:checked) {
+    border-color: #8b5cf6;
+
+    background: rgba(139,92,246,0.08);
+}
+
+.type-icon {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.type-card strong {
+    font-size: 14px;
+}
+
+.type-card p {
+    margin-top: 7px;
+
+    color: #71717a;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* DIFFICULTY */
+
+.difficulty-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+.difficulty-card {
+    padding: 14px;
+
+    text-align: center;
+
+    border: 1px solid #27272a;
+
+    border-radius: 10px;
+
+    color: #a1a1aa;
+
+    background: #151519;
+}
+
+.difficulty-card:has(input:checked) {
+    border-color: #8b5cf6;
+
+    color: white;
+
+    background: rgba(139,92,246,0.08);
+}
+
+
+/* START */
+
+.start-btn {
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #8b5cf6;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(139,92,246,0.3);
+}
+
+.start-btn span {
+    margin-left: 8px;
+
+    font-size: 18px;
+}
+
+.privacy {
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #52525b;
+
+    font-size: 11px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .setup-container {
+        margin-top: 40px;
+    }
+
+    .setup-header h1 {
+        font-size: 36px;
+    }
+
+    .setup-card {
+        padding: 25px;
+    }
+
+    .option-grid,
+    .type-grid,
+    .difficulty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step-indicator div {
+        width: 25px;
+    }
+}
